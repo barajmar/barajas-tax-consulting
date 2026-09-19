@@ -5,50 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="BarajasTax.css">  
     <title>Barajas Tax Consulting | Coming Soon</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
-            color: #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .container {
-            background-color: #ffffff;
-            padding: 40px 60px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            max-width: 600px;
-            width: 90%;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.1rem;
-            color: #666;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Barajas Tax Consulting</h1>
-        <p>Nuestro nuevo sitio web y portal de admisión de clientes están actualmente en construcción.</p>
-        <p>¡Por favor, vuelva a visitarnos pronto!</p>
-        <h2>¡Conectemos en redes sociales!</h2>
-             <a href="https://www.facebook.com/profile.php?id=61578565798085"><img src="Facebook.png" alt="Book of Face" style="width:100px;height:100px;"></a>
-             <a href="https://www.instagram.com/barajastax.consulting"><img src="Instagram.png" alt="The Gram" style="width:100px;height:100px;"></a>
-                 <form action="https://www.cognitoforms.com/BarajasTaxConsulting/Form">
-                        <button type="submit">Formulario de Recopilación de Datos</button>
-                </form>
+    <link rel="icon" type="img/png" href="android-chrome-512x512.png">
+    </head>
+    
+    <body>
+         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!--Navigation Bar-->
+        <nav>
+            <div class="topdiv">
+                <div class="logo"> 
+                    <img src="logo.png" width="60" height="60">
+                    <span class="barajas-tax">BARAJAS TAX CONSULTING</span>
+                </div>
+                <a class="topmenu" href="#bgimg">Inicio</a>
+                <a class="topmenu" href="#comienza">Servicios</a>
+                <a class="topmenu" href="#location-section">Conócenos</a>
+            </div>
+        </nav>
+        <main>
+         <section class="bgimg" id="bgimg">
+            <div class="hero-content">
+            <br>
+       <h1>Contabilidad con claridad.   <br>
+        Asesoría con propósito.
+       </h1>
+       <div class="gold-line"></div>
+       <p>Servicios personalizados de impuestos, contabilidad, <br>y asesoria empresarial para individuos
+        y pequeñas empresas.</p>
+       <br>
+      <p class="lang-tag">
+         <img src="mundo.png" alt="mundito" width="35" height="35"> 
+         <span>Inglés & Español</span>
+        </p>
+        <p class="location-tag">
+            <img src="location.png" alt="woodlands" width="35" height="35;">
+            <span>The Woodlands, Tx</span>
+        </p>
         </div>
-</body>
+        </div>
+        </section>
+</main>
+
+<section class="comienza" id="comienza">
+
+    <div class="title">
+<h2><span>Comience Aquí</span></h2>
+</div>
+
+<div class="card-business">
+    <div class="card">
+        <div class="card-icon"><img src="biz.png" alt="formulario empresas">
+        </div>
+        <div class="card-text">
+            <h3>Formulario para empresas</h3>
+            <p>Para declaraciones, contabilidad y asesoría empresarial. </p>
+            <button onclick="document.location='formularioNegocios.html'">Formulario Negocios</button>
+        </div>
+    </div>
+
+<div class="card">
+    <div class="card-icon">
+        <img src="personalpeople.png" alt="formulario personal">
+    </div>
+    <div class="card-text">
+        <h3>Formulario Personal</h3>
+        <p>Para su declaración de impuestos individual.</p>
+       <button onclick="document.location='personalPeople.html'">Formulario Personal</button>
+    </div>
+</div>
+</div>
+</section>
+<!-- LOCATION -->
+ <section class="location-section" id="location-section">
+  <div class="location-content">
+    <p class="eyebrow">FIND US</p>
+
+    <h2>VISÍTENOS</h2>
+
+    <p>
+    Estamos ubicados en The Woodlands, Texas.
+    Pase a visitarnos.
+    </p>
+
+    <address>
+      1095 Evergreen Cir, Ste 244<br>
+      The Woodlands, TX 77380
+    </address>
+
+    <a
+      class="directions-btn"
+      href="https://www.google.com/maps/search/?api=1&query=1095+Evergreen+Cir+Ste+244+The+Woodlands+TX+77380"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      CÓMO LLEGAR
+    </a>
+  </div>
+
+  <div class="location-map">
+    <iframe
+      src="https://www.google.com/maps?q=1095%20Evergreen%20Cir%20Ste%20244%2C%20The%20Woodlands%2C%20TX%2077380&output=embed"
+      width="100%"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Map showing 1095 Evergreen Cir, Suite 244, The Woodlands, TX"
+    ></iframe>
+  </div>
+</section>
+
+<script src="script.js"></script>
+<footer>
+
+</footer>
+    </body>
 </html>
